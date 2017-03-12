@@ -16,7 +16,7 @@ function insert_sort()
 		$j = $i-1;
 		$key = $num[$i];
 		//算法导论中提到这里不能用二分法来提高效率，因为用二分法，O(lgn)查找到了插入的位置，但还要用O(n)的时间移出空位
-		while($j>0 && $num[$j]>$key) {
+		while($j>=0 && $num[$j]>$key) {
 			$num[$j+1] = $num[$j];
 			$j--;
 		}
