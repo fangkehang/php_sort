@@ -11,7 +11,7 @@
 function bubble()
 {
 	$num = array(23,43,22,13,42,45,21);
-	for($i=0;$i<=6;$i++) {
+	for($i=0;$i<=5;$i++) {
 		for($j=6;$j>$i;$j--) {
 			if($num[$j] < $num[$j-1]) {
 				//交换
